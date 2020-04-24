@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                rb2 = findViewById(sb2);
                rb3 = findViewById(sb3);
                et1 = findViewById(R.id.editText);
-               
+
                //Put the text in an array
                String[] info = {rb1.getText().toString(), rb2.getText().toString()
                        , rb3.getText().toString(), et1.getText().toString()};
