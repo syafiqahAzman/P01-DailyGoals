@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
     TextView tv1, tv2, tv3, tv4;
+    Button btnFin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +34,13 @@ public class Main2Activity extends AppCompatActivity {
         tv3.setText("Attempt the problem myself : " + info[2]);
         tv4.setText("Reflection : " + info[3]);
 
+
+        btnFin = findViewById(R.id.button2);
+        btnFin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
